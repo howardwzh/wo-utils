@@ -1,13 +1,13 @@
 import { expect } from 'chai'
 import { shallowMount } from '@vue/test-utils'
-import HelloWorld from '@/components/HelloWorld.vue'
+import JkInput from '@/packages/input'
 
-describe('HelloWorld.vue', () => {
+describe('JkInput.vue', () => {
   it('renders props.msg when passed', () => {
     const msg = 'new message'
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg }
+    const wrapper = shallowMount(JkInput, {
+      propsData: { value: msg }
     })
-    expect(wrapper.text()).to.include(msg)
+    expect(wrapper.vm.value).to.include(msg)
   })
 })

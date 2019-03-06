@@ -1,34 +1,24 @@
 # gzjk-ui
+广金金控的Vue组件库
 
-## Project setup
-```
-yarn install
-```
+## Api使用手册/demo
+http://www.gzjkp2p.net.cn/mbxbank/activity/gzjk-ui/index.html
 
-### Compiles and hot-reloads for development
+## 安装
 ```
-yarn run serve
-```
+npm install gzjk-ui -S
 
-### Compiles and minifies for production
-```
-yarn run build
+or
+
+yarn add gzjk-ui
 ```
 
-### Run your tests
-```
-yarn run test
-```
+## 使用
+```js
+import GzjkUI from 'gzjk-ui'
+import 'gzjk-ui/dist/gzjk-ui.css';
 
-### Lints and fixes files
-```
-yarn run lint
-```
+...
 
-### Run your unit tests
+Vue.use(GzjkUI)
 ```
-yarn run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
