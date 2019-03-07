@@ -5,7 +5,7 @@
   "main": "./dist/gzjk-ui.common.js",
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "build-storybook -s public -o storybook-static/gzjk-ui",
+    "build-storybook": "build-storybook -s public -o storybook-static/activity/gzjk-ui",
     "build-bundle": "vue-cli-service build --target lib --name gzjk-ui ./src/index.js",
     "test:unit:watch": "vue-cli-service test:unit --watch --inspect-brk",
     "test:unit": "vue-cli-service test:unit",
