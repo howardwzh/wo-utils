@@ -1,20 +1,19 @@
 {
-  "name": "gzjk-ui",
-  "version": "1.0.0",
+  "name": "gzjk-utils",
+  "version": "0.1.0",
   "private": false,
-  "main": "./dist/gzjk-ui.common.js",
+  "main": "./dist/gzjk-utils.common.js",
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "rm -rf storybook-static && build-storybook -s public -o storybook-static/gzjk-ui",
-    "build-bundle": "vue-cli-service build --target lib --name gzjk-ui ./src/index.js",
-    "test:unit:watch": "vue-cli-service test:unit --watch --inspect-brk",
+    "build-storybook": "rm -rf storybook-static && build-storybook -s public -o storybook-static/gzjk-utils",
+    "build-bundle": "vue-cli-service build --target lib --name gzjk-utils ./packages/index.js",
+    "test:unit:debug": "vue-cli-service test:unit --watch --inspect-brk",
+    "test:unit:watch": "vue-cli-service test:unit --watch",
     "test:unit": "vue-cli-service test:unit",
     "发布npm直接输入后面的命令": "npm publish --access public"
   },
-  "dependencies": {
-    "vue": "^2.6.8"
-  },
   "devDependencies": {
+    "vue": "^2.6.8",
     "@storybook/addon-storysource": "^4.0.7",
     "@storybook/addon-viewport": "^4.0.7",
     "@storybook/storybook-deployer": "^2.8.1",
@@ -36,7 +35,7 @@
   },
   "files": [
     "dist/*",
-    "src/*",
+    "packages/*",
     "*.json"
   ]
 }

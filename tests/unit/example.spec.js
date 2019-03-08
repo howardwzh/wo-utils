@@ -1,13 +1,11 @@
 import { expect } from 'chai'
-import { shallowMount } from '@vue/test-utils'
-import JkInput from '@/packages/input'
+import browser from '../../packages/browser'
 
-describe('JkInput.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message'
-    const wrapper = shallowMount(JkInput, {
-      propsData: { value: msg }
+describe('browser', () => {
+  it('when brower is ios, then return isIOS is true', () => {
+    navigator.__defineGetter__('userAgent', function () {
+      return 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1' // customized user agent
     })
-    expect(wrapper.vm.value).to.include(msg)
+    expect(browser.isIOS).to.equal(true)
   })
 })

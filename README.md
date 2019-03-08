@@ -1,24 +1,27 @@
-# gzjk-ui
-广金金控的Vue组件库
+# gzjk-utils
+广金金控的前端函数/套件库
 
 ## Api使用手册/demo
-http://www.gzjkp2p.net.cn/mbxbank/activity/gzjk-ui/index.html
+http://www.gzjkp2p.net.cn/mbxbank/activity/gzjk-utils/index.html
 
 ## 安装
 ```
-npm install gzjk-ui -S
+npm install gzjk-utils -S
 
 or
 
-yarn add gzjk-ui
+yarn add gzjk-utils
 ```
 
 ## 使用
 ```js
-import GzjkUI from 'gzjk-ui'
-import 'gzjk-ui/dist/gzjk-ui.css';
-
+import { browser } from 'gzjk-utils'
+or
+import browser from 'gzjk-utils/packages/browser'
 ...
 
-Vue.use(GzjkUI)
+
+if (browser.isIOS) {
+  alert('I am ios!')
+}
 ```
