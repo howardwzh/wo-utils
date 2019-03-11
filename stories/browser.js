@@ -22,8 +22,8 @@ storiesOf('browser', module)
   .add('判断是否在指定app中的webview', () => ({
     template: `
       <div>
-          <button @click="checkIsInGzjkApp">获取当前移动浏览器信息</button>
-          <div class="result">是否在GzjkApp: {{result}}</div>
+          <button @click="checkIsInTMallApp">获取当前移动浏览器信息</button>
+          <div class="result">是否在TMallApp: {{result}}</div>
       </div>`,
     data () {
       return {
@@ -31,8 +31,8 @@ storiesOf('browser', module)
       }
     },
     methods: {
-      checkIsInGzjkApp () {
-        this.result = browser.hasFlagInUA('GzjkApp')
+      checkIsInTMallApp () {
+        this.result = browser.hasFlagInUA('TMallApp')
       }
     }
   }))

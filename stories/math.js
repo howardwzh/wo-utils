@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/vue'
-import * as jkMath from '../packages/math'
+import * as WoMath from '../packages/math'
 
 storiesOf('math', module)
   .add('生成guid', () => ({
@@ -15,7 +15,7 @@ storiesOf('math', module)
     },
     methods: {
       getGuid () {
-        this.guid = jkMath.guid()
+        this.guid = WoMath.guid()
       }
     }
   }))

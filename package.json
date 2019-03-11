@@ -1,12 +1,13 @@
 {
-  "name": "gzjk-utils",
+  "name": "wo-utils",
   "version": "0.1.4",
   "private": false,
-  "main": "./dist/gzjk-utils.common.js",
+  "main": "./dist/wo-utils.common.js",
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "build-storybook": "rm -rf storybook-static && build-storybook -s public -o storybook-static/gzjk-utils",
-    "build-bundle": "vue-cli-service build --target lib --name gzjk-utils ./packages/index.js",
+    "build-storybook": "rm -rf storybook-static && build-storybook -s public",
+    "deploy-storybook": "storybook-to-ghpages",
+    "build-bundle": "vue-cli-service build --target lib --name wo-utils ./packages/index.js",
     "test:unit:debug": "vue-cli-service test:unit --watch --inspect-brk",
     "test:unit:watch": "vue-cli-service test:unit --watch",
     "test:unit": "vue-cli-service test:unit",

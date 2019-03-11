@@ -1,23 +1,23 @@
-# gzjk-utils
-广金金控的前端函数/套件库
+# wo-utils
+常用工具/套件库
 
 ## Api使用手册/demo
-http://www.gzjkp2p.net.cn/mbxbank/activity/gzjk-utils/index.html
+http://www.howardwzh.com/wo-utils/
 
 ## 安装
 ```
-npm install gzjk-utils -S
+npm install wo-utils -S
 
 or
 
-yarn add gzjk-utils
+yarn add wo-utils
 ```
 
 ## 使用
 ```js
-import { browser } from 'gzjk-utils'
+import { browser } from 'wo-utils'
 or
-import browser from 'gzjk-utils/packages/browser'
+import browser from 'wo-utils/packages/browser'
 ...
 
 
