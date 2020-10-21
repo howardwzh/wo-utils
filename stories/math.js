@@ -8,13 +8,13 @@ storiesOf('math', module)
             <button @click="getGuid">生成guid</button>
             <div class="result">{{guid}}</div>
         </div>`,
-    data () {
+    data() {
       return {
         guid: ''
       }
     },
     methods: {
-      getGuid () {
+      getGuid() {
         this.guid = WoMath.guid()
       }
     }
